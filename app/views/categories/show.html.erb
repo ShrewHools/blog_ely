@@ -1,0 +1,6 @@
+<h1> Category - <%=@category.category_name %> </h1>
+<ul class="category_name list-unstyled">
+  <% @category_posts.each do |t| %>
+    <li>  <%= link_to t.title, post_path(t) %> </li>
+  <% end %>
+</ul>
