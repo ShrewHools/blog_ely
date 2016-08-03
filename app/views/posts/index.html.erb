@@ -1,10 +1,11 @@
-<h1> TEST ALL POSTS</h1>
-
 <% @posts.each do |t| %>
   <div class="blog_post">
-    <div class="title_post"> <%= t.title %>      </div>
-    <div class="time">       <%= t.created_at.to_formatted_s(:long_ordinal) %> </div>
-    <div class="post_body">  <%= t.post_body %>  </div>
-    <%= link_to "READ MORE", post_path(t) %>
+
+    <%= image_tag "#{t.image}", class:"image" %>
+    <div class="title"> <%=link_to "#{t.title}", post_path(t) %> </div>
+    <div class="time"><%= t.created_at.to_formatted_s(:long_ordinal) %> </div>
+    <div class="body"> <%= t.post_body %> </div>
+    <%= link_to "Read full post", post_path(t), class:"button" %>
+
   </div>
 <% end %>

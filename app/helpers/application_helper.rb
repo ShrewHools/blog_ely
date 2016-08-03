@@ -1,5 +1,9 @@
 module ApplicationHelper
 
+  # def src_to_image(s)
+  #   s.gsub! /\s(.*?\.jpg)\s/, '<%= image_tag "\1", alt: "rails", width: "500px" %>'
+  # end
+
 private
 
   def header_block_1

@@ -1,6 +1,7 @@
 <h1> EDIT POST </h1>
 
 <%= simple_form_for @post do |f| %>
+  <%= f.input :image, label:'Title Image'%>
   <%= f.input :title, label:'Title'%>
   <%= f.input :post_body, label:'Content', as: :text  %>
   <%= f.button :submit %>

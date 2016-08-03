@@ -14,35 +14,73 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+*{
+  font-family: 'Open Sans Condensed',Arial, cursive;
+}
+
+h1,h2{
+  text-align: center;
+}
+
+
+
+
 header{
   position: relative;
   .social{
     position:relative;
-    background-color: #00AB6F;
     text-align: right;
   }
   .category{
     position: relative;
     text-align: center;
     padding-top: 33px;
-    background-color: #35D59D;
     height: 90px;
   }
 }
-// start posts/index
-h1{
-  text-align: center;
-}
+
+//start All posts
 .blog_post{
   text-align:center;
+  margin-bottom: 40px;
+  .image{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width:100%;
+  }
+  .title a{
+  color:#141412;
+  text-decoration: none;
+  font-size: 28px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  }
+  .time{
+    color:#9A9A9A;
+    letter-spacing: 1px;
+    font: normal, 9px;
+    padding-bottom: 20px;
+  }
+  .body{
+    width: 60%;
+    margin:0 auto 10px auto;
+    line-height: 20px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+  }
+}
+//end All posts
+
+// start posts/index
+.blog_post{
+  .button{
+    text-decoration: none;
+    font-size: 25px;
+    color:#343E34 ;
+    border-bottom: ridge;
+  }
 }
 //end    posts/index
-
-// start posts/:id
-h2{
-  text-align: center;
-}
-//end    posts/:id
 
 
 //start category/:id
@@ -63,7 +101,6 @@ footer{
   bottom: 0;
   height: 50px;
   width: 100%;
-  background-color:#20805E;
   text-align: center;
   margin-top: 30px;
 }
