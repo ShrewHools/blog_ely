@@ -21,28 +21,107 @@
 h1,h2{
   text-align: center;
 }
+//                                      start social-ico
+.shareinst{
+  background: url(social-icons-main.png) no-repeat -35px 0px ;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+.sharevk1{
+  background: url(social-icons-main.png) no-repeat -84px 0px;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+.sharetw{
+  background: url(social-icons-main.png) no-repeat 1px 0px;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
 
+.shareinst:hover{
+  background: url(social-icons-main2.png) no-repeat -35px 0px ;
+  background-color: #000;
+  border-radius: 50%;
 
+}
+.sharevk1:hover{
+  background: url(social-icons-main2.png) no-repeat -84px 0px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.sharetw:hover{
+  background: url(social-icons-main2.png) no-repeat 1px 0px;
+  background-color: #000;
+  border-radius: 50%;
+}
+//                                      end social ico
 
-
+//                                      START HEADER
 header{
   position: relative;
-  .social{
-    position:relative;
-    text-align: right;
+  min-height: 200px;
+  width: 100%;
+  border-bottom: solid;
+  .social-main{
+    position: relative;
+    height: 30px;
+    ul{
+      position: absolute;
+      top:0;
+      right: 20px;
+    }
+    li{
+      display: inline-block;
+      a{
+        display: block;
+        width:40px;
+        height: 40px;
+         -webkit-transition: all 0.6s ease-in-out;
+        -moz-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
+        -ms-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out;
+      }
+    }
   }
   .category{
     position: relative;
     text-align: center;
-    padding-top: 33px;
+    margin-top: 33px;
     height: 90px;
+    li{
+      padding-bottom: 15px;
+      a{
+        text-decoration: none;
+        color:#000;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 40%;
+      }
+    a:hover{
+      color: #ffffcc;
+      background-color: #262626;
+      transition: all 0.6s ease-in-out;
+    }
+    }
   }
 }
-
+//                                      END HEADER
 //start All posts
 .blog_post{
   text-align:center;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: solid;
   .image{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -69,9 +148,9 @@ header{
     font-size: 20px;
   }
 }
-//end All posts
+//                                     end All posts
 
-// start posts/index
+//                                      start posts/index
 .blog_post{
   .button{
     text-decoration: none;
@@ -80,22 +159,25 @@ header{
     border-bottom: ridge;
   }
 }
-//end    posts/index
+//                                     end    posts/index
 
 
-//start category/:id
+//                                     start category/:id
 .category_name{
   text-align: center;
   cursor: pointer;
 }
-//end   category/:id
+//                                     end   category/:id
 
 
-//start form posts edit/update
+//                                     start form posts edit/update
 .simple_form{
   text-align: center;
 }
-//end   form posts edit/update
+//                                     end   form posts edit/update
+
+
+//                                     START FOOTER
 footer{
   position: relative;
   bottom: 0;
@@ -103,4 +185,6 @@ footer{
   width: 100%;
   text-align: center;
   margin-top: 30px;
+  font-size: 14px;
 }
+//                                     END FOOTER
