@@ -3,3 +3,16 @@
   <h2>  <%= image_tag "#{@post.image}", class:"image" %>  </h2>
   <h2 class="body">  <%= @post.post_body %> </h2>
 </div>
+
+<div class="post_comments">
+  <h2> Comments </h2>
+  <div class="comment">
+    <%= render @post.comments %>
+  </div>
+
+  <div class="create_comment">
+    <h2>Add a comment</h2>
+    <%= render 'comments/form' %>
+  </div>
+</div>
+

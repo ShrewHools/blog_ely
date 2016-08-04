@@ -1,0 +1,6 @@
+<%= simple_form_for ([@post, @post.comments.build]) do |f| %>
+  <%= f.input :body, label:'Комментарий', as: :text%>
+  <%= f.input :name, label:'Имя' %>
+  <%= f.input :email, label:'E-mail', as: :email  %>
+  <%= f.button :submit, "Отправить"%>
+<% end %>

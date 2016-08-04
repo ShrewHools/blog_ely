@@ -63,6 +63,28 @@ h1,h2{
   background-color: #000;
   border-radius: 50%;
 }
+
+  .social-main{
+    position: relative;
+    height: 30px;
+    ul{
+      position: absolute;
+      padding-left: 45%;
+    }
+    li{
+      display: inline-block;
+      a{
+        display: block;
+        width:40px;
+        height: 40px;
+         -webkit-transition: all 0.6s ease-in-out;
+        -moz-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
+        -ms-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out;
+      }
+    }
+  }
 //                                      end social ico
 
 //                                      START HEADER
@@ -106,11 +128,9 @@ header{
         font-weight: bold;
         font-size: 20px;
         padding: 10px;
-        border-radius: 70%;
       }
     a:hover{
-      color: #ffffcc;
-      background-color: #262626;
+      border-bottom: solid;
       transition: all 0.6s ease-in-out;
     }
     }
@@ -160,7 +180,44 @@ header{
   }
 }
 //                                     end    posts/index
-
+//                                     start post/:id
+.post_comments{
+  letter-spacing: 2px;
+  margin-bottom: 100px;
+  h2{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .comment{
+    border-bottom:1px solid #6B5B4C;
+    width: 80%;
+    margin: 0 auto;
+    .name{
+      text-align: left;
+      padding:5px 0 15px 15px;
+      font-weight: 600;
+      font-size: 15px;
+      .data{
+        color: #adadad;
+        padding-left: 10px;
+        font-size: 13px;
+      }
+    }
+  }
+  .create_comment{
+    width: 70%;
+    margin: 20px auto;
+    h2{
+      padding: 20px;
+    }
+    .new_comment{
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+}
+//                                     end post/:id
 
 //                                     start category/:id
 .category_name{
@@ -177,7 +234,7 @@ header{
   .hover_background{
     position: absolute;
     top:0;
-    width: 92%;
+    width: 96%;
     height:200px;
     padding: 0;
     display: block;
@@ -188,7 +245,7 @@ header{
         text-transform: uppercase;
         letter-spacing: 3px;
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 800;
         display: inline-block;
         color:black;
         text-decoration: none;
@@ -225,12 +282,17 @@ header{
 
 //                                     START FOOTER
 footer{
+  border-top: solid;
   position: relative;
   bottom: 0;
-  height: 50px;
+  height: 100px;
   width: 100%;
   text-align: center;
   margin-top: 30px;
   font-size: 14px;
+  p{
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
 }
 //                                     END FOOTER
