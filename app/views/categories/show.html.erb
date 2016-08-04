@@ -1,6 +1,19 @@
-<h1> Category - <%=@category.category_name %> </h1>
-<ul class="category_name list-unstyled">
+<h1 class="category_name"> <%=@category.category_name %> </h1>
+
+<div class="container category_c">
   <% @category_posts.each do |t| %>
-    <li>  <%= link_to t.title, post_path(t) %> </li>
+      <div class="col-md-4">
+        <div class="category">
+          <%= image_tag "#{t.image}", class:"image" %>
+          <div class="hover_background">
+            <div class="hover_link"> <%= link_to t.title, post_path(t) %></div>
+          </div>
+        </div>
+      </div>
   <% end %>
-</ul>
+
+  <% if @category_posts.blank? %>
+    <p class="category_blank">В данной категории нет записей</p>
+  <% end %>
+</div>
+
