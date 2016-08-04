@@ -13,7 +13,6 @@
   </head>
 
   <body>
-
     <div class="container">
       <%= render 'layouts/header' %>
       <% flash.each do |key, value| %>
@@ -22,6 +21,7 @@
       <%= yield %>
       <%= render 'layouts/social' %>
       <%= render 'layouts/footer' %>
+      <div id="scrollup"><a href="">BACK TO TOP</a></div>
       <%= debug(params) if Rails.env.development? %>
     </div>
   </body>

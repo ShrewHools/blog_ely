@@ -65,6 +65,7 @@ h1,h2{
 }
 
   .social-main{
+    margin-top: 30px;
     position: relative;
     height: 30px;
     ul{
@@ -296,3 +297,32 @@ footer{
   }
 }
 //                                     END FOOTER
+
+/*START back to top*/
+#scrollup{
+  position: fixed;
+  padding: 15px 10px 10px;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  right: 10px;
+  bottom: 10px;
+  display: none;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  a{
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-decoration: none;
+    padding: 15px 10px 10px;
+  }
+}
+#scrollup:hover{
+  background-color: rgba(135, 135, 135, 0.50);
+}
+/*END back to top*/
