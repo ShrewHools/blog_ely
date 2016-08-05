@@ -8,21 +8,19 @@
   </div>
 
     <div class="col-md-4 category">
-      <ul class="list-unstyled">
         <% header_block_1.each do |t|  %>
-        <li> <%= link_to t.category_name, category_path(t) %> </li>
+          <div class="col-md-6 category_s"> <%= link_to t.category_name, category_path(t) %> </div>
         <% end %>
-      </ul>
      </div>
 
-    <div class="col-md-4 category"> <%= link_to "Ely blog LOGO", root_path %> </div>
+    <div class="col-md-4 category"> <%= link_to image_tag("logo.png", alt:"Ely Blog"), root_path %> </div>
 
     <div class="col-md-4 category">
-      <ul class="list-unstyled">
         <% header_block_2.each do |t|  %>
-        <li> <%= link_to t.category_name, category_path(t) %></li>
+          <div class="col-md-6 category_s"> <%= link_to t.category_name, category_path(t) %> </div>
         <% end %>
-      </ul>
-    </div>
+     </div>
+
 
 </header>
+

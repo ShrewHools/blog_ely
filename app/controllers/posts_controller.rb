@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
 
+  http_basic_authenticate_with name: "root", password: "admin", except: [:index, :show]
+
   def index
     @posts = Post.all.order("created_at desc")
   end

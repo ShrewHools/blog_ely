@@ -18,6 +18,10 @@
   font-family: 'Open Sans Condensed',Arial, cursive;
 }
 
+body{
+  background-color:#f8f8f8;
+}
+
 h1,h2{
   text-align: center;
 }
@@ -97,6 +101,7 @@ header{
   .social-main{
     position: relative;
     height: 30px;
+    margin-top: 5px;
     ul{
       position: absolute;
       top:0;
@@ -121,7 +126,7 @@ header{
     text-align: center;
     margin-top: 33px;
     height: 90px;
-    li{
+    .category_s{
       padding-bottom: 15px;
       a{
         text-decoration: none;
@@ -225,6 +230,10 @@ header{
   margin: 40px auto;
   letter-spacing: 3px;
 }
+.category_1{
+  margin-top: 30px;
+}
+
 .category{
   text-align: center;
   cursor: pointer;
